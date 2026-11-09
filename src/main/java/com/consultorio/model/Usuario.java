@@ -24,11 +24,8 @@ public class Usuario {
 	@Column(unique = true, nullable = false)
 	private String username;
 	
-	@Column(unique = true)
+	@Column(unique = true, nullable = false)
 	private String password;
-	
-	@Column
-	private String nombre;
 	
 	@ManyToMany
 	@JoinTable(
